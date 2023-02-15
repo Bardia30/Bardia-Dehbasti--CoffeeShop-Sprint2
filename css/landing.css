@@ -1,31 +1,40 @@
 /* Hero section */
 .hero {
     background-color: #FFF0ED;
-    padding-left: 150px;
+    padding-top: 50px;
     padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.hero_texts {
+    /* display: flex;
+    flex-direction: row-reverse; */
+}
+
 
 .hero__h1 {
     font-size: 4em;
     color: #393939;
     font-weight: 300;
-    margin-top: 0;
-    padding-top:50px;
-    display:inline-block;
+    margin: 0 auto;
+    /* padding-top:50px; */
+    /* display:inline-block;
     position: relative;
-    bottom: 400px;
-    
+    bottom: 400px; */
 }
 
 
 .hero__p {
     font-size: 1.1em;
     font-weight: 400;
-    display: inline-block;
+    /* display: inline-block; */
     width:400px;
-    position: relative;
+    margin-bottom: 40px;
+    /* position: relative;
     bottom: 35vh;
-    left: -23.5vw;
+    left: -23.5vw; */
 
 }
 
@@ -37,16 +46,16 @@
     border-radius: 0;
     font-size: 1.5em;
     padding: 15px 30px;
-    position: relative;
+    /* position: relative;
     bottom: 20vh;
-    left: -51vw;
+    left: -51vw; */
 }
 
 
 .hero__img {
-    position: relative;
+    /* position: relative;
     top: 5vh;
-    right: 8vw;
+    right: 8vw; */
 }
 
 
@@ -67,35 +76,72 @@
     padding-top:8vh;
 }
 
+.cards-section {
+    display:flex;
+    justify-content: center;
+
+}
+
 .card {
-    display: inline-block;
-    /* width: 330px;
-    height: 440px; */
+    /* display: inline-block; */
+    /* width: 330px; */
+    /* height: 440px; */
     width: 22vw;
-    height: 65vh;
+    height: 55vh;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0,0,0,0.25);
-    margin-right: 100px;
-    position: relative;
-    left: 10%;
+    margin: auto 40px;
+    /* position: relative; */
+    /* left: 10%; */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 
 .card__image{
     /* height: 280px; */
     height: 55%;
-    position: relative;
+    /* position: relative;
     left: 27%;
-    top:2%;
+    top:2%; */
+    align-self: center;
+    margin-top: 20px;
 }
+
+
+.card__text-area {
+    background: #FFF0ED;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+.card__text-area--2 {
+    
+}
+
+.card__price--5 {
+    
+}
+
 
 .card__h3 {
     font-size: 2em;
     font-weight: 300;
     color: #393939;
-    position: relative;
-    left: 20%;
+    /* position: relative;
+    left: 20%; */
+    margin:0;
+
 }
+
+
 
 
 /* .big-h3 {
@@ -109,9 +155,18 @@
     font-size: 2em;
     font-weight: 600;
     color:#5BACC3;
-    position: relative;
-    left: 33%;
+    /* position: relative;
+    left: 33%; */
+    margin:0;
 }
+
+
+.card_quantity {
+    color:#909090;
+    font-weight: 300;
+    margin:0;
+}
+
 
 
 .our-product__button {
