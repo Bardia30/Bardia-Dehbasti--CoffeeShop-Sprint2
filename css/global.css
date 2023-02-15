@@ -6,29 +6,31 @@ body {
 
 .navbar {
     background-color: #FFF0ED;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    padding: 2vh 2vw;
+
 }
 
 
-.navbar__img {
-    margin-left: 1.5vw;
+nav>a{
+    align-self: center;
 }
 
 .navbar__h3 {
     font-size: 60px;
     font-weight: 300;
     color:#393939;
-    display: inline-block;
-    margin: 0 auto;
+    margin: 0;
 }
 
 
 
 .navbar__list {
     list-style-type: none;
-    display: inline-block;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
     
 }
 
@@ -36,8 +38,7 @@ body {
 .navbar__list__item {
     font-size: 1.5rem;
     font-weight: 400;
-    display: inline-block;
-    margin: auto 20px;
+    margin: auto 2vw;
     text-decoration: none;
 }
 
