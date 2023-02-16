@@ -7,10 +7,15 @@ body {
 .navbar {
     background-color: #FFF0ED;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: flex-end;
-    padding: 2vh 2vw;
+    /* padding: 2vh 2vw; */
+    padding: 2vh 0vw 2vh 2vw;
+}
 
+.navbar--left {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -31,7 +36,6 @@ nav>a{
     list-style-type: none;
     display: flex;
     align-items: flex-end;
-    
 }
 
 

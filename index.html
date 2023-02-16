@@ -13,19 +13,28 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="../index.html"><img src="assets/logos/coffee-beans-logo-and-footer.svg" alt=""></a>
-            <h3 class="navbar__h3">nitro</h3>
-            <ul class="navbar__list">
-                <li class="navbar__list__item"><a class="navbar__list__item__link" href="../index.html">ABOUT</a></li>
-                <li class="navbar__list__item"><a class="navbar__list__item__link"href="pages/menu.html">MENU</a></li>
-                <li class="navbar__list__item"><a class="navbar__list__item__link navbar__list__item__link--blue" href="pages/menu.html">SHOP NOW</a></li>
-            </ul>
+            <section class="navbar--left">
+                <a href="../index.html"><img src="assets/logos/coffee-beans-logo-and-footer.svg" alt=""></a>
+                <h3 class="navbar__h3">nitro</h3>
+            </section>
+            <section class="navbar--right">
+                <ul class="navbar__list">
+                    <li class="navbar__list__item"><a class="navbar__list__item__link" href="../index.html">ABOUT</a></li>
+                    <li class="navbar__list__item"><a class="navbar__list__item__link"href="pages/menu.html">MENU</a></li>
+                    <li class="navbar__list__item"><a class="navbar__list__item__link navbar__list__item__link--blue" href="pages/menu.html">SHOP NOW</a></li>
+                </ul>
+            </section>
+            
+            
         </nav>
         <section class="hero">
             <section class="hero__texts">
                 <h1 class="hero__h1">Nitro Coffee</h1>
                 <p class="hero__p">Coffee is a brewed drink prepeared from roasted coffee beans, the seends of berries from certain cofee species. </p>
-                <a href="pages/menu.html"><button class="hero__button">SHOP NOW</button></a>
+                <a href="pages/menu.html"><button class="hero__button">
+                    <div class="button-border"></div>
+                    SHOP NOW
+                </button></a>
             </section>
             <img class="hero__img" src="assets/images/coffeebeans-hero.png" alt="coffee bag">
         </section>
@@ -43,11 +52,11 @@
                     </section>
                 </section>
                 <section class="card">
-                    <img class="card__image" src="assets/images/coldbrew.png" alt="cold-brew">
-                    <section class="card__text-area card__text-area--2">
-                        <h3 class="card__h3">Cold Brews</h3>
-                        <p class="card__price card__price--5">$5</p>
-                        <p class="card_quantity">1 can</p>
+                    <img class="card__image card__image--background-removed" src="assets/images/coldbrew.png" alt="cold-brew">
+                    <section class="card__text-area">
+                        <h3 class="card__h3 card_h3--padding">Cold Brew</h3>
+                        <p class="card__price">$5</p>
+                        <p class="card_quantity card_quantity--2">1 can</p>
                     </section>
                 </section>
                 <section class="card">
@@ -60,22 +69,51 @@
                 </section>
             </section>
             <section class="our-products__button__section">
-                <a class="our-products__button__link" href="pages/menu.html"><button class="our-product__button">VIEW ALL</button></a>
+                <a class="our-products__button__link" href="#"><button class="our-product__button">
+                    <div class="button-border"></div>
+                    VIEW ALL
+                </button></a>
             </section>
         </section>
-        <section class="discount">
-            <p class="discount__p">Get 20% off your first order with code: <span>FirstNitro</span></p>
+        <section class="different">
+            <section class="differnt--left">
+                <h1 class="different__h1">We're Different</h1>
+                <p class="different__p">We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence.</p>
+                <section class="different__logos">
+                    <img class="different__logos__picture" src="assets/logos/planting.svg" alt="planting-logo">
+                    <img class="different__logos__picture" src="assets/logos/coffee-beans.svg" alt="coffee-beans-logo">
+                    <img class="different__logos__picture" src="assets/images/coffee-cup.svg" alt="coffee-cup">
+                </section>
+                <section class="different__button__section">
+                    <a class="different__button__link" href="pages/menu.html"><button class="different__button">
+                        <div class="button-border"></div>
+                        LEARN MORE
+                    </button></a>
+                </section>
+            </section>
+            <section class="different--right">
+                <div class="different__border"></div>
+                <img class="different__img" src="assets/images/tiltedcan.png" alt="tilted-can">
+            </section>
+
         </section>
+        <section class="discount">
+            <section class="discount__box">
+                <p class="discount__p">Get 20% off your first order with code: <span>FirstNitro</span></p>
+            </section>
+        </section>
+        
     </main>
     <footer>
+        <img class="footer__logo footer__logo--1" src="assets/logos/coffee-beans-logo-and-footer.svg" alt="logo">
         <section class="address">
             <h3 class="footer__h3">Address</h3>
             <p>123 main street, Toronto, ON</p>
         </section>
         <section class="hours">
             <h3 class="footer__h3">Hours</h3>
-            <p><span>Monday - Friday:</span> 9am - 7pm</p>
-            <p><span>Saturday - Sunday:</span> 10am - 5pm</p>
+            <p><span class="bold">Monday - Friday:</span> 9am - 7pm</p>
+            <p><span class="bold">Saturday - Sunday:</span> 10am - 5pm</p>
             
         </section>
         <section class="social">
@@ -85,6 +123,7 @@
             <img class="social__img" src="assets/logos/Yelp-Icon.svg" alt="yelp">
             <img class="social__img" src="assets/logos/Instagram-Icon.svg" alt="instagram">
         </section>
+        <img class="footer__logo footer__logo--2" src="assets/logos/coffee-beans-logo-and-footer.svg" alt="logo">
     </footer>
     
 </body>
