@@ -310,7 +310,8 @@ footer {
     background-color: #FFF0ED;
     display: flex;
     justify-content: space-evenly;
-    position:relative
+    position:relative;
+    overflow: hidden;
 }
 
 .footer__logo {
