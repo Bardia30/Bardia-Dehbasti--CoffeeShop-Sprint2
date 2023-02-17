@@ -128,6 +128,9 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1.25em;
+  font-size: 1.25em;
+  font-weight: 300;
+  color: white;
 }
 
 /* Menu Items */
@@ -142,31 +145,32 @@ body {
   flex-wrap: nowrap;
 }
 .menu-item__h2 {
-  color: #393939;
   font-size: 3.8em;
   font-weight: 300;
+  color: #393939;
   margin-top: 0;
   padding-top: 50px;
 }
 .menu-item__h3 {
-  color: #393939;
-  font-weight: 300;
   font-size: 2em;
+  font-weight: 300;
+  color: #393939;
 }
 .menu-item__p {
-  color: #393939;
   font-style: italic;
   font-size: 1.1em;
+  font-weight: 300;
+  color: #393939;
   text-align: center;
   width: 500px;
   margin: 0 auto;
 }
 .menu-item__price {
   font-size: 1.1em;
+  font-weight: 500;
   color: #5BACC3;
   margin-bottom: 0;
   padding-bottom: 20px;
-  font-weight: 500;
 }
 .menu-item--cold-drinks {
   background-color: #F7F7F7;

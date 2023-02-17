@@ -1,3 +1,6 @@
+@use '../partials/variables' as *;
+
+
 @mixin flex($align: center, $justify:space-around, $direction:row, $wrap: nowrap) {
     display: flex;
     justify-content: $justify;
@@ -10,4 +13,11 @@
     background-image: $url;
     background-size: cover;
     background-position: center;
+}
+
+
+@mixin font($size:4em, $weight: 300, $color:$primary-text) {
+    font-size:$size;
+    font-weight:$weight;
+    color: $color;
 }

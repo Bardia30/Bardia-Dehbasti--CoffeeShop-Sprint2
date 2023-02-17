@@ -64,10 +64,10 @@ body {
   flex-wrap: nowrap;
 }
 .hero__h1 {
-  font-size: 4em;
-  color: #393939;
-  font-weight: 300;
   margin: 0 auto;
+  font-size: 4em;
+  font-weight: 300;
+  color: #393939;
   /* padding-top:50px; */
   /* display:inline-block;
   position: relative;
@@ -76,6 +76,7 @@ body {
 .hero__p {
   font-size: 1.1em;
   font-weight: 400;
+  color: #393939;
   /* display: inline-block; */
   width: 400px;
   margin-bottom: 40px;
@@ -85,10 +86,11 @@ body {
 }
 .hero__button {
   background-color: #5BACC3;
-  color: white;
   border: none;
   border-radius: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
   padding: 15px 30px;
   /* position: relative;
   bottom: 20vh;
@@ -112,8 +114,8 @@ body {
 }
 .our-products__h2 {
   font-size: 4em;
-  color: #393939;
   font-weight: 300;
+  color: #393939;
   text-align: center;
   margin-top: 0;
   padding-top: 8vh;
@@ -122,10 +124,11 @@ body {
   display: block;
   width: 180px;
   background-color: #5BACC3;
-  color: white;
   border: none;
   border-radius: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
   padding: 15px 30px;
   margin: 0 auto;
   position: relative;
@@ -209,6 +212,9 @@ body {
 .card__quantity {
   color: #909090;
   font-weight: 300;
+  font-size: 1em;
+  font-weight: 300;
+  color: #909090;
   margin: 0;
 }
 
@@ -223,13 +229,14 @@ body {
 }
 .different__h1 {
   font-size: 4em;
-  color: #393939;
   font-weight: 300;
+  color: #393939;
   margin: 0 auto;
 }
 .different__p {
   font-size: 1.1em;
   font-weight: 400;
+  color: #393939;
   width: 400px;
   margin-bottom: 40px;
 }
@@ -246,10 +253,11 @@ body {
 .different__button {
   width: 15vw;
   background-color: #5BACC3;
-  color: white;
   border: none;
   border-radius: 0;
   font-size: 1.5em;
+  font-weight: 300;
+  color: white;
   padding: 15px 0px;
   margin: 0 auto;
   position: relative;
@@ -310,8 +318,9 @@ body {
 }
 
 .discount__p {
+  font-size: 3.1rem;
+  font-weight: 300;
   color: white;
-  font-size: 3.1em;
   margin: 20px 40px;
 }
 
@@ -361,6 +370,9 @@ footer > section {
 }
 
 .footer__h3 {
+  font-size: 2em;
+  font-weight: 300;
+  color: #393939;
   font-size: 2em;
   font-weight: 300;
   color: #393939;
