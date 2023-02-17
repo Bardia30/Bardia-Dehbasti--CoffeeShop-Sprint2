@@ -1,0 +1,52 @@
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin:0;
+}
+
+.navbar {
+    background-color: #FFF0ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* padding: 2vh 2vw; */
+    padding: 2vh 0vw 2vh 2vw;
+
+    &__a {
+        align-self: center;
+    }
+    &--left {
+        display: flex;
+        align-items: center;
+    }
+    &__h3 {
+        font-size: 60px;
+        font-weight: 300;
+        color:#393939;
+        margin: 0;
+    }
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: flex-end;
+        &__item {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: auto 2vw;
+            text-decoration: none;
+            &__link {
+                text-decoration: none;
+                color:#393939;
+                &--blue{
+                    color: #5BACC3;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
