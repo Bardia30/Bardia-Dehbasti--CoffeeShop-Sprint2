@@ -1,0 +1,13 @@
+@mixin flex($align: center, $justify:space-around, $direction:row, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction:$direction;
+    flex-wrap:$wrap;
+}
+
+@mixin bg-img($url: url(../assets/images/coldbrewbackground.png)) {
+    background-image: $url;
+    background-size: cover;
+    background-position: center;
+}

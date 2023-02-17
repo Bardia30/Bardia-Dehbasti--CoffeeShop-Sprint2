@@ -1,4 +1,6 @@
 @use './partials/global' as *;
+@use './partials/variables' as *;
+@use './mixins/mixins' as *;
 
 
 /* background and grey menu box container */
@@ -9,30 +11,37 @@
     background-image: url(../assets/images/coffee-circle.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include bg-img($url: url(../assets/images/coffee-circle.jpg));
+    
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex($justify:center);
+
     &__menu-container {
         width:20%;
         height: 30%;
-        background-color: #393939;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: $primary-text;
+        
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flex($justify: center);
         position: relative;
 
         &__border {
             width: 98%;
             height: 98%;
-            border: 5px solid #5BACC3;
+            border: 5px solid $secondary-text;
             position: absolute;
             left: -10px;
             top: -10px;
         }
         &__h1 {
-            font-size: 4em;
-            font-weight: 300;
-            color: white;
+            // font-size: 4em;
+            // font-weight: 300;
+            // color: white;
+            @include font($color:white);
             /* margin-top: 8px; */
         }
     }
@@ -42,33 +51,36 @@
 /* subnav section */
 
 .subnav {
-    background-color: #393939;
+    background-color: $primary-text;
     text-align: center;
     width:100vw;
     height:8vh;
     padding-left:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex($justify:center);
     &__ul {
         list-style-type: none;
         /* position: relative;
         top: 28%; */
         margin-top:0;
         margin-bottom: 0;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        @include flex($justify:center, $align:normal);
     }
     &__item {
         /* display: inline; */
         padding: 0 20px;
-        border-left: 4px #5BACC3 solid;
+        border-left: 4px $secondary-text solid;
     }
     &__link {
         text-decoration: none;
         color:white;
         font-size: 1.25em;
+        @include font($size:1.25em, $color:white);
     }
 
 }
@@ -78,40 +90,48 @@
 /* Menu Items */
 
 .menu-item {
-    background-color: #FFF0ED;
+    background-color: $primary-color;
     /* text-align: center; */
     padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include flex($direction:column);
+
     &__h2 {
-        color:#393939;
-        font-size: 3.8em;
-        font-weight: 300;
+        // color: $primary-text;
+        // font-size: 3.8em;
+        // font-weight: 300;
+        @include font($size:3.8em);
         margin-top: 0;
         padding-top: 50px;
     }
     &__h3 {
-        color: #393939;
-        font-weight: 300;
-        font-size: 2em;
+        // color: $primary-text;
+        // font-weight: 300;
+        // font-size: 2em;
+        @include font($size:2em);
     }
     &__p {
-        color: #393939;
+        // color: $primary-text;
         font-style: italic;
-        font-size: 1.1em;
+        // font-size: 1.1em;
+        @include font($size:1.1em);
         text-align: center;
         width:500px;
         margin: 0 auto;
     }
     &__price {
-        font-size: 1.1em;
-        color: #5BACC3;
+        // font-size: 1.1em;
+        // color: $secondary-text;
+        // font-weight: 500;
+        @include font($size:1.1em, $weight: 500, $color:$secondary-text);
         margin-bottom: 0;
         padding-bottom: 20px;
-        font-weight: 500;
+        
     }
     &--cold-drinks {
-        background-color: #F7F7F7;
+        background-color: $secondary-color;
     }
 }

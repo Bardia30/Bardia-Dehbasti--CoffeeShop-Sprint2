@@ -1,20 +1,22 @@
 @use './partials/global' as *;
-
+@use './partials/variables' as *;
+@use './mixins/mixins' as *;
 
 /* Hero section */
 .hero {
-    background-color: #FFF0ED;
+    background-color: $primary-color;
     padding-top: 50px;
     padding-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    @include flex;
+
+
     &__h1 {
-        font-size: 4em;
-        color: #393939;
-        font-weight: 300;
         margin: 0 auto;
+        @include font;
         /* padding-top:50px; */
         /* display:inline-block;
         position: relative;
@@ -22,8 +24,8 @@
     }
 
     &__p {
-        font-size: 1.1em;
-        font-weight: 400;
+        
+        @include font($size: 1.1em, $weight:400);
         /* display: inline-block; */
         width:400px;
         margin-bottom: 40px;
@@ -33,16 +35,17 @@
     }
 
     &__button {
-        background-color: #5BACC3;
-    color: white;
-    border: none;
-    border-radius: 0;
-    font-size: 1.5em;
-    padding: 15px 30px;
-    /* position: relative;
-    bottom: 20vh;
-    left: -51vw; */
-    position: relative;
+        background-color: $secondary-text;
+        // color: white;
+        border: none;
+        border-radius: 0;
+        // font-size: 1.5em;
+        @include font($color:white, $size:1.5rem);
+        padding: 15px 30px;
+        /* position: relative;
+        bottom: 20vh;
+        left: -51vw; */
+        position: relative;
     }
 }
 
@@ -53,7 +56,7 @@
     height:98%;
     top: -6px;
     left: -5px;
-    border: 2px solid #393939;
+    border: 2px solid $primary-text;
 }
 
 
@@ -62,13 +65,14 @@
 /*our products section */
 
 .our-products {
-    background-color: #F7F7F7;
+    background-color: $secondary-color;
     padding-bottom: 8vh;
 
     &__h2 {
-        font-size: 4em;
-        color: #393939;
-        font-weight: 300;
+        // font-size: 4em;
+        // color: $primary-text;
+        // font-weight: 300;
+        @include font;
         text-align: center;
         margin-top: 0;
         padding-top:8vh;
@@ -76,11 +80,12 @@
     &__button {
         display: block;
         width:180px;
-        background-color: #5BACC3;
-        color: white;
+        background-color: $secondary-text;
+        // color: white;
         border: none;
         border-radius: 0;
-        font-size: 1.5em;
+        // font-size: 1.5em;
+        @include font($color:white, $size:1.5rem);
         padding: 15px 30px;
         margin: 0 auto;
         position: relative;
@@ -95,9 +100,9 @@
 
 
 .cards-section {
-    display:flex;
-    justify-content: center;
-
+    // display:flex;
+    // justify-content: center;
+    @include flex($align: flex-start);
 }
 
 .card {
@@ -111,9 +116,14 @@
     margin: auto 40px;
     /* position: relative; */
     /* left: 10%; */ 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+
+    @include flex($align: flex-start, $justify: space-between, $direction: column);
+
     
     &__image {
         /* height: 280px; */
@@ -125,25 +135,29 @@
         margin-top: 20px;
         
         &--background-removed {
-            background-color: #F7F7F7;
-        background-blend-mode: multiply;
+            mix-blend-mode: multiply;
+            filter:contrast(1);
         }
     }
     &__text-area {
-        background: #FFF0ED;
+        background: $primary-color;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
         padding: 40px 20px;
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        // align-items: center;
+        @include flex($align: center, $justify: space-between, $wrap:wrap);
+        
         row-gap: 20px;
     }
     &__h3 {
-        font-size: 2em;
-        font-weight: 300;
-        color: #393939;
+        // font-size: 2em;
+        // font-weight: 300;
+        // color: $primary-text;
+        @include font($size:2em);
         /* position: relative;
         left: 20%; */
         margin:0;
@@ -154,17 +168,19 @@
     }
 
     &__price {
-        font-size: 2em;
-        font-weight: 600;
-        color:#5BACC3;
+        // font-size: 2em;
+        // font-weight: 600;
+        // color: $secondary-text;
+        @include font($size:2em, $weight:600, $color:$secondary-text);
         /* position: relative;
         left: 33%; */
         margin:0;
     }
 
     &__quantity {
-        color:#909090;
+        color:$card-text-color;
         font-weight: 300;
+        @include font($color: $card-text-color, $size:1em);
         margin:0;
     }
 }
@@ -175,23 +191,31 @@
 
 .different {
     padding-top:100px;
-    display:flex;
-    justify-content: space-around;
+
+    // display:flex;
+    // justify-content: space-around;
+    @include flex($align:normal);
+
+
+
     &__h1 {
-        font-size: 4em;
-        color: #393939;
-        font-weight: 300;
+        // font-size: 4em;
+        // color: $primary-text;
+        // font-weight: 300;
+        @include font;
         margin: 0 auto;
     }
     &__p {
-        font-size: 1.1em;
-        font-weight: 400;
+        // font-size: 1.1em;
+        // font-weight: 400;
+        @include font($size:1.1em, $weight:400);
         width:400px;
         margin-bottom: 40px;
     }
     &__logos {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        @include flex($justify:space-between);
         
         &__picture {
             width: 50px;
@@ -199,11 +223,12 @@
     }
     &__button {
         width:15vw;
-        background-color: #5BACC3;
-        color: white;
+        background-color: $secondary-text;
+        // color: white;
         border: none;
         border-radius: 0;
-        font-size: 1.5em;
+        // font-size: 1.5em;
+        @include font($color:white, $size:1.5em);
         padding: 15px 0px;
         margin: 0 auto;
         position: relative;
@@ -216,11 +241,14 @@
     }
     &--right {
         width: 400px;
-        background-image: url(../assets/images/coldbrewbackground.png);
-        background-size: cover;
-        display: flex;
-        justify-content: center;
+        // background-image: url(../assets/images/coldbrewbackground.png);
+        // background-size: cover;
+        @include bg-img;
+        // display: flex;
+        // justify-content: center;
+
         justify-self: center;
+        @include flex($align: flex-start, $justify: center);
         position: relative;
     }
 
@@ -228,7 +256,7 @@
         position: absolute;
         width:100%;
         height: 98%;
-        border: 5px solid #5BACC3;
+        border: 5px solid $secondary-text;
         top:-20px;
         left:-20px;
     }
@@ -242,25 +270,29 @@
 .discount {
     padding-top:200px;
     padding-bottom:200px;
-    display: flex;
-    justify-content: center;
+    
+    // display: flex;
+    // justify-content: center;
+    @include flex($justify:center, $align:flex-start);
 }
 
 
 .discount__box {
     width: 88%;
-    background-color: #393939;
+    background-color: $primary-text;
     /* margin: 200px 20px 200px 40px; */
     
     padding: 20px 0;
     /* text-align: center; */ 
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include flex($justify: center);
 }
 
 .discount__p {
-    color:white;
-    font-size: 3.1em;
+    // color:white;
+    // font-size: 3.1em;
+    @include font($color:white, $size:3.1rem);
     margin: 20px 40px;
 }
 
@@ -274,9 +306,12 @@
 
 
 footer {
-    background-color: #FFF0ED;
-    display: flex;
-    justify-content: space-evenly;
+    background-color: $primary-color;
+    
+    // display: flex;
+    // justify-content: space-evenly;
+    @include flex($justify:space-evenly);
+    
     position:relative;
     overflow: hidden;
 }
@@ -317,7 +352,8 @@ footer>section{
 .footer__h3 {
     font-size: 2em;
     font-weight: 300;
-    color: #393939;
+    color: $primary-text;
+    @include font($size:2em);
     /* display: block; */
 }
 
