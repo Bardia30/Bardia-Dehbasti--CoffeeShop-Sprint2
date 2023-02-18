@@ -24,10 +24,16 @@
     &__button {
         @include button;
     }
+    
 }
 
 .button-border {
     @include border;
+    
+}
+
+.button-border:active{
+    @include border($top:0,$left:0)
 }
 
 /*our products section */
@@ -61,7 +67,8 @@
 }
 
 .card {
-    width: 22vw;
+    // width: 22vw;
+    width:320px; //had to apply px width instead of vw because of screen and positioning issues.
     height: 55vh;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0,0,0,0.25);
@@ -146,6 +153,20 @@
     }
     &__img {
         align-self:center;
+        transition: 2s;
+        z-index:40;
+        &:hover{
+            animation: spin 2s infinite linear;
+        }
+    }
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 
@@ -162,6 +183,20 @@
     background-color: $primary-text;
     padding: 20px 0;
     @include flex($justify: center);
+    animation: flash 2.5s infinite ease-in;
+}
+
+@keyframes flash {
+    0% {
+        background-color: $primary-text;
+    }
+    50% {
+        background-color: $secondary-text;
+    }
+    100% {
+        background-color: $primary-text;
+    }
+
 }
 
 .discount__p {

@@ -29,6 +29,7 @@
     @include font($color:white, $size:1.5rem);
     padding: 15px 30px;
     position: relative;
+    cursor: pointer;
 }
 
 @mixin border($top:-6px,$left:-5px,$width:98%, $height:98%, $border: 2px solid $primary-text) {
