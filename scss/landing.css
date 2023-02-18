@@ -11,7 +11,6 @@ body {
   align-items: flex-end;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* padding: 2vh 2vw; */
   padding: 2vh 0vw 2vh 2vw;
 }
 .navbar__a {
@@ -41,6 +40,7 @@ body {
 .navbar__list__item {
   font-size: 1.5rem;
   font-weight: 400;
+  color: #393939;
   margin: auto 2vw;
   text-decoration: none;
 }
@@ -68,21 +68,13 @@ body {
   font-size: 4em;
   font-weight: 300;
   color: #393939;
-  /* padding-top:50px; */
-  /* display:inline-block;
-  position: relative;
-  bottom: 400px; */
 }
 .hero__p {
   font-size: 1.1em;
   font-weight: 400;
   color: #393939;
-  /* display: inline-block; */
   width: 400px;
   margin-bottom: 40px;
-  /* position: relative;
-  bottom: 35vh;
-  left: -23.5vw; */
 }
 .hero__button {
   background-color: #5BACC3;
@@ -92,9 +84,6 @@ body {
   font-weight: 300;
   color: white;
   padding: 15px 30px;
-  /* position: relative;
-  bottom: 20vh;
-  left: -51vw; */
   position: relative;
 }
 
@@ -121,8 +110,6 @@ body {
   padding-top: 8vh;
 }
 .our-products__button {
-  display: block;
-  width: 180px;
   background-color: #5BACC3;
   border: none;
   border-radius: 0;
@@ -130,8 +117,9 @@ body {
   font-weight: 300;
   color: white;
   padding: 15px 30px;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
+  display: block;
 }
 .our-products__button__section {
   margin: 50px auto;
@@ -149,16 +137,11 @@ body {
 }
 
 .card {
-  /* display: inline-block; */
-  /* width: 330px; */
-  /* height: 440px; */
   width: 22vw;
   height: 55vh;
   border-radius: 10px;
   box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
   margin: auto 40px;
-  /* position: relative; */
-  /* left: 10%; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -166,11 +149,7 @@ body {
   flex-wrap: nowrap;
 }
 .card__image {
-  /* height: 280px; */
   height: 55%;
-  /* position: relative;
-  left: 27%;
-  top:2%; */
   align-self: center;
   margin-top: 20px;
 }
@@ -194,8 +173,6 @@ body {
   font-size: 2em;
   font-weight: 300;
   color: #393939;
-  /* position: relative;
-  left: 20%; */
   margin: 0;
 }
 .card__h3--padding {
@@ -205,13 +182,9 @@ body {
   font-size: 2em;
   font-weight: 600;
   color: #5BACC3;
-  /* position: relative;
-  left: 33%; */
   margin: 0;
 }
 .card__quantity {
-  color: #909090;
-  font-weight: 300;
   font-size: 1em;
   font-weight: 300;
   color: #909090;
@@ -251,16 +224,16 @@ body {
   width: 50px;
 }
 .different__button {
-  width: 15vw;
   background-color: #5BACC3;
   border: none;
   border-radius: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 300;
   color: white;
-  padding: 15px 0px;
-  margin: 0 auto;
+  padding: 15px 30px;
   position: relative;
+  width: 15vw;
+  margin: 0 auto;
 }
 .different__button__section {
   margin: 50px auto;
@@ -285,9 +258,9 @@ body {
   position: absolute;
   width: 100%;
   height: 98%;
-  border: 5px solid #5BACC3;
   top: -20px;
   left: -20px;
+  border: 5px solid #5BACC3;
 }
 .different__img {
   align-self: center;
@@ -307,9 +280,7 @@ body {
 .discount__box {
   width: 88%;
   background-color: #393939;
-  /* margin: 200px 20px 200px 40px; */
   padding: 20px 0;
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,26 +328,17 @@ footer {
 }
 
 footer > section {
-  /* margin-left: 12vw; */
   margin-bottom: 50px;
 }
 
 .address {
-  /* display: inline-block; */
-  /* width: 200px; */
   width: 10%;
-  /* position: relative; /*I had to add this in order level this section with the other two */
-  /*top: -2vh; */
 }
 
 .footer__h3 {
   font-size: 2em;
   font-weight: 300;
   color: #393939;
-  font-size: 2em;
-  font-weight: 300;
-  color: #393939;
-  /* display: block; */
 }
 
 .bold {
@@ -384,12 +346,10 @@ footer > section {
 }
 
 .social {
-  /* display: inline-block; */
   width: 200px;
 }
 
 .social__img {
-  /* width: 50px; */
   width: 25%;
   margin-right: 5%;
 }/*# sourceMappingURL=landing.css.map */

@@ -21,3 +21,21 @@
     font-weight:$weight;
     color: $color;
 }
+
+@mixin button {
+    background-color: $secondary-text;
+    border: none;
+    border-radius: 0;
+    @include font($color:white, $size:1.5rem);
+    padding: 15px 30px;
+    position: relative;
+}
+
+@mixin border($top:-6px,$left:-5px,$width:98%, $height:98%, $border: 2px solid $primary-text) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    border: $border;
+}

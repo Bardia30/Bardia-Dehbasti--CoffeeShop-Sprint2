@@ -9,38 +9,23 @@ body {
 
 .navbar {
     background-color: $primary-color;
-    
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: flex-end;
     @include flex($align:flex-end, $justify: space-between);
-
-    /* padding: 2vh 2vw; */
     padding: 2vh 0vw 2vh 2vw;
-
     &__a {
         align-self: center;
     }
     &--left {
-        // display: flex;
-        // align-items: center;
         @include flex($justify:normal);
     }
     &__h3 {
-        font-size: 60px;
-        font-weight: 300;
-        color: $primary-text;
+        @include font($size: 60px);
         margin: 0;
     }
     &__list {
         list-style-type: none;
-        
-        // display: flex;
-        // align-items: flex-end;
         @include flex($align:flex-end, $justify:normal);
         &__item {
-            font-size: 1.5rem;
-            font-weight: 400;
+            @include font($size:1.5rem, $weight:400);
             margin: auto 2vw;
             text-decoration: none;
             &__link {
